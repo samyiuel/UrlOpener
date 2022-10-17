@@ -1,6 +1,9 @@
 import webbrowser
 
-urls = ["https://github.com/", "https://www.google.com/", "https://gmail.com/"]
+urls = input('Enter the url list: ')
+# https://github.com/ https://www.google.com/ https://gmail.com/
 
-for url in urls:
+url_list = list(urls.split(" "))
+
+for url in url_list:
     webbrowser.open(url)
